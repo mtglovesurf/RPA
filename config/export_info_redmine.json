@@ -1,0 +1,26 @@
+{
+    "comment":"redmine",
+    "url": "http://172.22.64.23/redmine/projects/it_workflow/issues",
+    "sequence":
+        [
+            {
+                "comment":"login",
+                "actions": [
+                    {"type": "input", "by": "ID",           "selector": "username", "value": "xxxxx"},
+                    {"type": "input", "by": "ID",           "selector": "password", "value": "xxxxx"},
+                    {"type": "click", "by": "CSS_SELECTOR", "selector": "#login-form > form > table > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=submit]"}
+                ]
+            },
+            {
+                "actions": [
+                    {"type": "click", "by": "ID", "selector": "cb_status_id"},
+                    {"type": "click", "by": "CSS_SELECTOR", "selector": "#query_form_with_buttons > p > a.icon.icon-checked"},
+                    {"type": "click", "by": "CSS_SELECTOR", "selector": "#content > p > span:nth-child(2) > a"},
+                    {"type": "click", "by": "ID", "selector": "csv_columns_all"},
+                    {"type": "click", "by": "CSS_SELECTOR", "selector": "#csv-export-form > p.buttons > input[type=submit]:nth-child(1)"}
+                ],
+                "filename": "issues.csv",
+                "encoding": "shift-jis"
+            }
+        ]
+}

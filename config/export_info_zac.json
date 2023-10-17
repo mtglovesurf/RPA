@@ -1,0 +1,68 @@
+{
+    "comment":"zac",
+    "url": "https://zukosha.zac.ai/zukosha/b/output/list",
+    "sequence":
+        [
+            {
+                "comment":"login",
+                "actions": [
+                    {"type": "click", "by": "CSS_SELECTOR", "selector": "button.third-party-form.form-custom"},
+                    {"type": "input", "by": "ID", "selector": "i0116", "value": "xxxxx"},
+                    {"type": "click", "by": "ID", "selector": "idSIButton9"},
+                    {"type": "input", "by": "ID", "selector": "i0118", "value": "xxxx"},
+                    {"type": "click", "by": "ID", "selector": "idSIButton9"},
+                    {"type": "click", "by": "ID", "selector": "idSIButton9"}
+                ]
+            },
+            {
+                "comment":"案件CSV出力",
+                "actions": [
+                        {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > main > div > div > div > div:nth-child(1) > div.menu-section-content > div:nth-child(2) > div:nth-child(4) > a"},
+                        {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > main > div > div > div.Panel-header > div.Panel-headerAside > button:nth-child(1)"},
+                        {"type":"click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-0 > ng-component > zac-popover > div.panel.ng-tns-c40-1.ng-trigger.ng-trigger-popup > zac-search-parameter-menu > zac-search-parameter-list > div > div:nth-child(1) > div.item-actions.ng-tns-c66-2 > div.item-action.item-action--wide-right-margin.ng-tns-c66-2 > button > div"},
+                        {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.BottomNav.ng-star-inserted > div > div.BottomNav-actions > div > button"}
+                    ],
+                "filename":"Anken.csv",
+                "encoding": "utf-8"
+            },
+
+            {
+                "comment":"勤務表",
+                "actions": [
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.AppBar.ng-star-inserted > div > div > zac-output-menu-button > button"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-1 > div > div.ng-tns-c73-0 > div.menu-inner.ng-tns-c73-0.ng-star-inserted > div:nth-child(2) > div.section-content.ng-tns-c73-0 > div > div:nth-child(4) > a"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > main > div > div > div.Panel-header > div.Panel-headerAside > button:nth-child(1)"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-0 > ng-component > zac-popover > div.panel.ng-tns-c32-1.ng-trigger.ng-trigger-popup > zac-search-parameter-menu > zac-search-parameter-list > div > div:nth-child(1) > div.item-actions.ng-tns-c63-2 > div.item-action.item-action--wide-right-margin.ng-tns-c63-2 > button"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.BottomNav.ng-star-inserted > div > div.BottomNav-actions > div:nth-child(1) > button"}
+                ],
+                "filename":"Kinmuhyou.csv",
+                "encoding": "utf-8"
+            },
+
+            {
+                "comment":"作業時間集計表",
+                "actions": [
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.AppBar.ng-star-inserted > div > div > zac-output-menu-button > button"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-1 > div > div.ng-tns-c70-0 > div.menu-inner.ng-tns-c70-0.ng-star-inserted > div:nth-child(2) > div.section-content.ng-tns-c70-0 > div > div:nth-child(2) > a"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > main > div > div > div.Panel-header > div.Panel-headerAside > button:nth-child(1)"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-0 > ng-component > zac-popover > div.panel.ng-tns-c32-1.ng-trigger.ng-trigger-popup > zac-search-parameter-menu > zac-search-parameter-list > div > div:nth-child(2) > div.item-actions.ng-tns-c62-2 > div.item-action.item-action--wide-right-margin.ng-tns-c62-2 > button"},
+                    {"type":"click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.BottomNav.ng-star-inserted > div > div.BottomNav-actions > div.BottomNav-action.ng-star-inserted > button"}
+                ],
+                "filename":"SagyouJikanShukei.csv",
+                "encoding": "utf-8"
+            },
+
+            {
+                "comment":"原価台帳",
+                "actions": [
+                    {"type": "click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.AppBar.ng-star-inserted > div > div > zac-output-menu-button > button"},
+                    {"type": "click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-1 > div > div.ng-tns-c69-0 > div.menu-inner.ng-tns-c69-0.ng-star-inserted > div:nth-child(3) > div.section-content.ng-tns-c69-0 > div > div:nth-child(3) > a"},
+                    {"type": "click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > main > div > div > div.Panel-header > div.Panel-headerAside > button:nth-child(1)"},
+                    {"type": "click", "by":"CSS_SELECTOR", "selector":"#cdk-overlay-0 > ng-component > zac-popover > div.panel.ng-tns-c32-1.ng-trigger.ng-trigger-popup > zac-search-parameter-menu > zac-search-parameter-list > div > div > div.item-actions.ng-tns-c62-2 > div.item-action.item-action--wide-right-margin.ng-tns-c62-2 > button"},
+                    {"type": "click", "by":"CSS_SELECTOR", "selector":"body > div.global-header-app-content > zac-root > div.BottomNav.ng-star-inserted > div > div.BottomNav-actions > div:nth-child(1) > button"}
+                ],
+                "filename":"GenkaDaichou.csv",
+                "encoding": "utf-8"
+            }
+        ]
+}
